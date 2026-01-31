@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayne - Gerenciar Recursos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div>Indústrias Wayne</div>
+    <div class="links" id="headerLinks"></div>
+    <div class="small" id="headerUser"></div>
+  </header>
+
+  <div class="container">
+    <h2>Gerenciar Recursos (Admin de Segurança)</h2>
+
+    <div class="card">
+      <h3>Novo / Editar</h3>
+      <input id="id" type="hidden" />
+
+      <div class="row">
+        <div class="col">
+          <label>Tipo</label>
+          <select id="tipo">
+            <option value="equipment">Equipamento</option>
+            <option value="vehicle">Veículo</option>
+            <option value="security_device">Dispositivo de Segurança</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Status</label>
+          <input id="status" placeholder="ativo / em_manutencao / etc" />
+        </div>
+      </div>
+
+      <div style="height:10px"></div>
+
+      <label>Nome</label>
+      <input id="nome" />
+
+      <div style="height:10px"></div>
+
+      <label>Descrição</label>
+      <textarea id="descricao" rows="3"></textarea>
+
+      <div style="height:14px"></div>
+
+      <button id="btnSalvar">Salvar</button>
+      <button id="btnLimpar" type="button">Limpar</button>
+      <p id="msgForm"></p>
+    </div>
+
+    <div class="card">
+      <h3>Lista</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Nome</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <p id="msg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/gerenciar_recursos.js"></script>
+</body>
+</html>

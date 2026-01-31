@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayne - Recursos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div>Indústrias Wayne</div>
+    <div class="links" id="headerLinks"></div>
+    <div class="small" id="headerUser"></div>
+  </header>
+
+  <div class="container">
+    <h2>Recursos</h2>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Nome</th>
+            <th>Status</th>
+            <th>Atualizado</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <p id="msg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/recursos.js"></script>
+</body>
+</html>

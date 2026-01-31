@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayne - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div>Indústrias Wayne</div>
+    <div class="small">Sistema de Segurança</div>
+  </header>
+
+  <div class="container">
+    <div class="card" style="max-width:480px;margin:40px auto;">
+      <h2>Login</h2>
+      <p class="small">Use os usuários de teste (senha 1234) ou crie novos com admin.</p>
+
+      <label>Email</label>
+      <input id="email" type="email" placeholder="email@wayne.com" />
+
+      <div style="height:10px"></div>
+
+      <label>Senha</label>
+      <input id="senha" type="password" placeholder="1234" />
+
+      <div style="height:14px"></div>
+
+      <button id="btnLogin">Entrar</button>
+      <p id="msg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script>
+    document.getElementById("btnLogin").addEventListener("click", async () => {
+      const email = document.getElementById("email").value.trim();
+      const senha = document.getElementById("senha").value;
+
+      document.getElementById("msg").textContent = "";
+      try {
+        const data = await apiFetch("/auth/login", {
+          method: "POST",
+          body: JSON.stringify({ email, senha })
+        });
+        setSession(data.token, data.user);
+        window.location.href = "dashboard.html";
+      } catch (e) {
+        document.getElementById("msg").textContent = e.message;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayne - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div>Indústrias Wayne</div>
+    <div class="links" id="headerLinks"></div>
+    <div class="small" id="headerUser"></div>
+  </header>
+
+  <div class="container">
+    <h2>Dashboard</h2>
+
+    <div class="row">
+      <div class="card col">
+        <div class="small">Total de Recursos</div>
+        <h1 id="totalRecursos">-</h1>
+      </div>
+      <div class="card col">
+        <div class="small">Equipamentos</div>
+        <h1 id="qtdEquip">-</h1>
+      </div>
+      <div class="card col">
+        <div class="small">Veículos</div>
+        <h1 id="qtdVeic">-</h1>
+      </div>
+      <div class="card col">
+        <div class="small">Dispositivos de Segurança</div>
+        <h1 id="qtdSeg">-</h1>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Atividades Recentes</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Data/Hora</th>
+            <th>Usuário</th>
+            <th>Ação</th>
+            <th>Entidade</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyLogs"></tbody>
+      </table>
+      <p id="msg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: #0f1115; color: #e8e8e8; }
+header { padding: 16px 20px; background: #151925; display:flex; justify-content:space-between; align-items:center; }
+header .links a { color:#e8e8e8; text-decoration:none; margin-left:12px; }
+.container { max-width: 980px; margin: 24px auto; padding: 0 16px; }
+.card { background:#151925; border:1px solid #232a3d; border-radius: 10px; padding:16px; margin-bottom:16px; }
+.row { display:flex; gap: 12px; flex-wrap: wrap; }
+.col { flex: 1; min-width: 220px; }
+input, select, textarea {
+  width:100%; padding:10px; border-radius:8px; border:1px solid #2b3550; background:#0f1115; color:#e8e8e8;
+}
+button {
+  padding:10px 14px; border:0; border-radius:8px; background:#2f6fed; color:white; cursor:pointer;
+}
+button.danger { background:#d64b4b; }
+table { width:100%; border-collapse: collapse; }
+th, td { padding:10px; border-bottom:1px solid #232a3d; text-align:left; }
+.badge { display:inline-block; padding:4px 8px; border-radius:999px; border:1px solid #2b3550; }
+.small { opacity:0.8; font-size: 12px; }
+.error { color:#ff7373; }
+.success { color:#7dff9b; }
+.hidden { display:none; }
