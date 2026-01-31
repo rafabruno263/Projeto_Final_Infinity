@@ -48,27 +48,27 @@ Exibe:
 ## Estrutura do Projeto
 
 projeto-wayne/
-backend/
-app.py
-db.py
-auth.py
-requirements.txt
-wayne.db (gerado automaticamente)
-frontend/
-index.html
-dashboard.html
-recursos.html
-gerenciar_recursos.html
-usuarios.html
-css/
-style.css
-js/
-api.js
-auth.js
-dashboard.js
-recursos.js
-gerenciar_recursos.js
-usuarios.js
+  backend/
+    app.py
+    db.py
+    auth.py
+    requirements.txt
+    wayne.db (gerado automaticamente)
+  frontend/
+    index.html
+    dashboard.html
+    recursos.html
+    gerenciar_recursos.html
+    usuarios.html
+  css/
+    style.css
+  js/
+    api.js
+    auth.js
+    dashboard.js
+    recursos.js
+    gerenciar_recursos.js
+    usuarios.js
 
 ---
 
