@@ -1,4 +1,3 @@
-```md
 # Projeto Final – Sistema de Segurança e Gestão de Recursos (Indústrias Wayne)
 
 Aplicação web **full stack** desenvolvida com:
@@ -48,8 +47,6 @@ Exibe:
 
 ## Estrutura do Projeto
 
-```
-
 projeto-wayne/
 backend/
 app.py
@@ -72,8 +69,6 @@ dashboard.js
 recursos.js
 gerenciar_recursos.js
 usuarios.js
-
-````
 
 ---
 
@@ -339,6 +334,3 @@ Retorna:
 * Nome: Rafael Bruno Braz Lopes
 * Curso: Desenvolvimento Full-Stack com IA
 * Projeto Final: Sistema de Segurança e Gestão de Recursos – Indústrias Wayne
-
-```
-```
