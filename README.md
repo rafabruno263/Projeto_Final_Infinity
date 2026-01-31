@@ -1,5 +1,3 @@
-Claro — aqui está **tudo em um único bloco** pronto pra você **copiar e colar direto** no README do GitHub:
-
 ```md
 # Projeto Final – Sistema de Segurança e Gestão de Recursos (Indústrias Wayne)
 
