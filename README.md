@@ -47,6 +47,7 @@ Exibe:
 
 ## Estrutura do Projeto
 
+```
 projeto-wayne/
   backend/
     app.py
@@ -60,15 +61,16 @@ projeto-wayne/
     recursos.html
     gerenciar_recursos.html
     usuarios.html
-  css/
-    style.css
-  js/
-    api.js
-    auth.js
-    dashboard.js
-    recursos.js
-    gerenciar_recursos.js
-    usuarios.js
+    css/
+      style.css
+    js/
+      api.js
+      auth.js
+      dashboard.js
+      recursos.js
+      gerenciar_recursos.js
+      usuarios.js
+```
 
 ---
 
